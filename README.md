@@ -27,8 +27,8 @@ This project aims to answer a questions regarding importing LocalDate type field
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/JasinskiSz/employee-management-system.git
-    cd employee-management-system
+    git clone https://github.com/JasinskiSz/open-csv-date-import-example.git
+    cd open-csv-date-import-example
     ```
 
 2. Build the project:
