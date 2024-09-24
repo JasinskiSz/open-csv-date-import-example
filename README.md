@@ -7,14 +7,14 @@ This project aims to answer a questions regarding importing LocalDate type field
 - **Import Employees** - Upload a CSV file to import employee details into the system.
 - **Retrieve Employees** - Fetch the list of all employees stored in the database.
 
-## Technologies Used
+## Tech stack
 
-- **Java**
-- **Spring Boot**
-- **Maven**
-- **H2 Database**
-- **OpenCSV**
-- **Lombok**
+- Java
+- Spring Boot
+- Maven
+- H2 Database
+- OpenCSV
+- Lombok
 
 ## Getting Started
 
@@ -43,8 +43,13 @@ This project aims to answer a questions regarding importing LocalDate type field
 
 ### Usage
 
-- **Import Employees**: Send a POST request to `/api/v1/employees` with a CSV file containing employee details.
-- **Retrieve Employees**: Send a GET request to `/api/v1/employees` to fetch the list of all employees.
+#### Import
+
+`POST /api/v1/employees` - Import employee details from a CSV file.
+
+#### Retrieve
+
+`GET /api/v1/employees` - Fetch the list of all employees.
 
 ### Running Tests
 
@@ -53,7 +58,9 @@ Run the tests using the following command:
 mvn test
 ```
 
-## How to import data with a csv file?
+That's the minimum you need to do to get the application up and running. You can now test the application yourself with any API testing tool. I'll cover Postman in the next section.
+
+### How to import data with a csv file?
 
 Prepare a CSV file. You can copy my example:
 ```csv
@@ -65,7 +72,7 @@ Alice,2000-01-01
 Bob,1995-07-20
    ```
 
-### Using postman
+#### Using postman
 
 1. Open Postman and create a new request. 
 2. Set the request type to POST and enter the URL `http://localhost:8080/api/v1/employees`. 
